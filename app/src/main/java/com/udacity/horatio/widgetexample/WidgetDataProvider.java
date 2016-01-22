@@ -45,10 +45,10 @@ public class WidgetDataProvider implements RemoteViewsService.RemoteViewsFactory
 
     @Override
     public RemoteViews getViewAt(int position) {
-        RemoteViews mView = new RemoteViews(mContext.getPackageName(),
+        RemoteViews view = new RemoteViews(mContext.getPackageName(),
                 android.R.layout.simple_list_item_1);
-        mView.setTextViewText(android.R.id.text1, mCollection.get(position));
-        return mView;
+        view.setTextViewText(android.R.id.text1, mCollection.get(position));
+        return view;
     }
 
     @Override
