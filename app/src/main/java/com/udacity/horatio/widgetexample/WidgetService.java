@@ -4,7 +4,7 @@ import android.content.Intent;
 import android.widget.RemoteViewsService;
 
 /**
- * Created by horatio on 1/21/16.
+ * WidgetService is the {@link RemoteViewsService} that will return our RemoteViewsFactory
  */
 public class WidgetService extends RemoteViewsService {
     @Override

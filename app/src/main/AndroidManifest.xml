@@ -16,6 +16,11 @@
             </intent-filter>
         </activity>
 
+        <!-- We'll need to add two entries to our manifest for our collection view widget -->
+
+        <!-- 1. The broadcast receiver that refers to our widget. This needs the
+                intent-filter android.appwidget.action.APPWIDGET_UPDATE and the
+                meta-data for our XML widget configuration -->
         <receiver android:name=".CollectionWidget">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
@@ -26,7 +31,8 @@
                 android:resource="@xml/collection_widget_info" />
         </receiver>
 
-        <!-- collection view -->
+        <!-- 2. The service that will send our collection data to our widget. It needs the
+                permission android.permission.BIND_REMOTEVIEWS -->
         <service android:name=".WidgetService"
             android:permission="android.permission.BIND_REMOTEVIEWS" />
 
