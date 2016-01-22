@@ -16,7 +16,6 @@ public class CollectionWidget extends AppWidgetProvider {
 
     static void updateAppWidget(Context context, AppWidgetManager appWidgetManager,
                                 int appWidgetId) {
-
         RemoteViews views = new RemoteViews(context.getPackageName(), R.layout.collection_widget);
 //        views.setTextViewText(R.id.appwidget_text, widgetText);
 
@@ -28,11 +27,6 @@ public class CollectionWidget extends AppWidgetProvider {
         }
         // Instruct the widget manager to update the widget
         appWidgetManager.updateAppWidget(appWidgetId, views);
-    }
-
-    @Override
-    public void onReceive(Context context, Intent intent) {
-        super.onReceive(context, intent);
     }
 
     @Override
@@ -53,7 +47,6 @@ public class CollectionWidget extends AppWidgetProvider {
     public void onDisabled(Context context) {
         // Enter relevant functionality for when the last widget is disabled
     }
-
 
     /**
      * Sets the remote adapter used to fill in the list items
