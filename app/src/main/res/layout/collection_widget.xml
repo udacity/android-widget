@@ -22,39 +22,23 @@
                 android:layout_height="32dp"
                 android:layout_gravity="center_vertical"
                 android:src="@mipmap/ic_launcher"/>
-            <LinearLayout
-                android:id="@+id/widget_top_bar"
-                android:layout_width="0dp"
+            <TextView
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:orientation="vertical"
-                android:paddingBottom="4dp"
-                android:paddingLeft="8dp"
-                android:paddingTop="4dp">
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/app_name"
-                    android:textAppearance="?android:attr/textAppearanceSmall"
-                    android:textColor="#4B4B4D"
-                    android:textStyle="bold"/>
-                <TextView
-                    android:id="@+id/txv_widget_title"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Example Widget"
-                    android:textAppearance="?android:attr/textAppearanceSmall"
-                    android:textColor="#4B4B4D"/>
-            </LinearLayout>
+                android:text="Widget Header"
+                android:layout_gravity="center_vertical"
+                android:textColor="@android:color/black"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold"
+                android:paddingStart="@dimen/widget_header_padding"
+                android:paddingLeft="@dimen/widget_header_padding"
+                android:paddingEnd="@dimen/widget_header_padding"
+                android:paddingRight="@dimen/widget_header_padding"/>
         </LinearLayout>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="#aaa"/>
         <ListView
-            android:id="@+id/widget_collection_view"
+            android:id="@+id/widget_list"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="match_parent">
         </ListView>
     </LinearLayout>
 

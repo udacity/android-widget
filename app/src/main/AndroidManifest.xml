@@ -28,7 +28,7 @@
 
         <!-- collection view -->
         <service android:name=".WidgetService"
-            android:permission="android.permissions.BIND_REMOTEVIEWS" />
+            android:permission="android.permission.BIND_REMOTEVIEWS" />
 
     </application>
 

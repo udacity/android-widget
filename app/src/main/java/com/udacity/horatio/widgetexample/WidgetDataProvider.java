@@ -14,6 +14,8 @@ import java.util.List;
  */
 public class WidgetDataProvider implements RemoteViewsService.RemoteViewsFactory {
 
+    private static final String TAG = "WidgetDataProvider";
+
     List mCollections = new ArrayList();
 
     Context mContext = null;
